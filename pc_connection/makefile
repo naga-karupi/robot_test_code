@@ -3,7 +3,9 @@ CC     = g++
 CFLAGS = -Wall -O2 -std=c++2a
 SRCS   = main.cpp 
 OBJS   = $(SRCS:%.cpp=%.o)
-INC    = -I ~/project/includes/ -I ~/project/cpp/src/libserial/src/libserial/ -I/usr/include/python3.8
+INC    = -I ~/project/includes/ \
+		 -I/usr/include/python3.8 \
+		 -I ~/project/cpp/src/libserial/src/libserial/
 LIB    = -lpython3.8 -lserial
 .PHONY: all clean
 

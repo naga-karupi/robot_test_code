@@ -13,7 +13,6 @@
 bool set_uart(LibSerial::SerialStream&);
 
 int main(){
-    constexpr int BUFF_SIZE = 4;
     char next;
     std::vector<char> x(100), y(100);
 

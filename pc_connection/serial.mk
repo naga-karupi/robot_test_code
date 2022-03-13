@@ -1,7 +1,7 @@
-TARGET = serial_test
+TARGET = serial
 CC     = g++
 CFLAGS = -O2 -std=c++2a -Wall
-SRCS   = serial_test.cpp
+SRCS   = serial.cpp
 OBJS   = $(SRCS:%.cpp=%.o)
 INC    =  -I ~/project/includes/
 LIB    = -lserial
@@ -16,4 +16,4 @@ $(TARGET):$(OBJS)
 	$(CC) -c $^ $(LIB) $(INC) $(CFLAGS)
 
 clean:
-	rm -f *.exe *.out *.o
+	rm -f serial *.o

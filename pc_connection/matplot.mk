@@ -1,7 +1,7 @@
-TARGET = pyplot
+TARGET = matplot
 CC     = g++
 CFLAGS = -O2 -std=c++2a -Wall
-SRCS   = pyplot.cpp
+SRCS   = matplot.cpp
 OBJS   = $(SRCS:%.cpp=%.o)
 INC    = -I/usr/include/python3.8 -I ~/project/includes/
 LIB    = -lpython3.8
@@ -16,4 +16,4 @@ $(TARGET):$(OBJS)
 	$(CC) -c $^ $(LIB) $(INC) $(CFLAGS)
 
 clean:
-	rm -f *.exe *.out *.o
+	rm -f matplot *.o
