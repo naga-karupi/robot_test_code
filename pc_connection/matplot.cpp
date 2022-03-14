@@ -13,7 +13,7 @@ int main(){
     }
 
     plt::plot(x, y);
-    plt::show("~/project/imgs/test.png");
+    plt::show();
 
     return 0;
 }
